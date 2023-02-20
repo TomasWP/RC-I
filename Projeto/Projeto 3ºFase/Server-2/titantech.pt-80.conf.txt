@@ -1,0 +1,5 @@
+<VirtualHost *:80>
+	DocumentRoot /var/www/html/internet.com-80
+	ServerName internet.com
+	ServerAlias www.internet.com
+</VirtualHost>

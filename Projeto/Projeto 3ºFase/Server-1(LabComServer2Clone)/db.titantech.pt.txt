@@ -1,0 +1,19 @@
+$TTL 604800
+$ORIGIN titantech.pt.
+@	IN	SOA	ns1.titantech.pt. adm.titantech. (
+			2 ; Serial
+			604800 ; Refresh
+			86400 ; Retry
+			2419200 ; Expire
+			604800) ; Negative Cache TTL
+ IN	NS	ns1.titantech.pt.
+ns1	IN	A	198.162.157.130
+@	IN	A	198.162.157.130
+www	IN	A	198.162.157.130
+siteA	IN	A	198.162.157.130
+hostPC	IN	A	198.162.157.130
+dmz	IN	A	198.162.157.130
+marketing	IN	A	198.162.157.130
+design	IN	A	198.162.157.130
+datacenter	IN	A	198.162.157.130
+admin	IN	A	198.162.157.130

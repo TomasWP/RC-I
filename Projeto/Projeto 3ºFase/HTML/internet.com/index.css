@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url("internetfundo.png");
+  background-size: cover;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+.logo {
+margin-top: 2px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: Cambria;
+  font-size: 18px;
+  background: #1f1e1ee8;
+  height: 8vh;
+}

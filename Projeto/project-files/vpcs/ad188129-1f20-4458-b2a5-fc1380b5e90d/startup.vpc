@@ -1,0 +1,4 @@
+set pcname Internet
+ip 120.100.20.1 120.100.20.254 24
+ip 2312:100:a199:aaee::1/64
+ip auto

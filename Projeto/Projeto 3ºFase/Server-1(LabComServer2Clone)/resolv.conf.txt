@@ -1,0 +1,2 @@
+nameserver 198.162.157.130
+nameserver 120.100.20.2

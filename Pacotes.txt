@@ -1,0 +1,20 @@
+Pacote(Tamanho Máximo 1514)
+Pacote Atual de tamanho 3100b
+1º Pacote
+
+- Eth(14b)
+- IP(20b)
+- Protocolo(8b)
+- Informação(1472)
+
+2º Pacote
+
+- Eth(14b)
+- IP(20b)
+- Informação(1480)
+
+3º Pacote
+
+- Eth(14b)
+- IP(20b)
+- Informação(148b)

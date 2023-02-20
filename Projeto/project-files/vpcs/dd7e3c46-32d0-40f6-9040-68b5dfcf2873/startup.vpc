@@ -1,0 +1,4 @@
+set pcname PC1-Admin
+ip 198.162.157.65 198.162.157.126 26
+ip 2abc:4622:0:2::1/64
+ip auto

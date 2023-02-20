@@ -1,0 +1,4 @@
+set pcname PC1-Design
+ip 198.162.157.1 198.162.157.62 26
+ip 2abc:4622:0:1::1/64
+ip auto

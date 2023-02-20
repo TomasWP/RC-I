@@ -1,0 +1,4 @@
+zone "titantech.pt" in{
+	type master; //define the zone as master
+	file "/etc/bind/db.titantech.pt"; //file with the domain records
+ };

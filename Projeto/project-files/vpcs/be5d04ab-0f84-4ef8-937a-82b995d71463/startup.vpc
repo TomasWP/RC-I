@@ -1,0 +1,4 @@
+set pcname VPCS
+ip 172.27.4.1 172.27.4.254 24
+ip 2abc:4622:0:5::1/64
+ip auto

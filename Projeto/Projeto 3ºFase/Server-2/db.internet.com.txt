@@ -1,0 +1,14 @@
+$TTL 604800
+$ORIGIN internet.com.
+@	IN	SOA	ns1.internet.com. adm.internet.com. (
+			2 ; Serial
+			604800 ; Refresh
+			86400 ; Retry
+			2419200 ; Expire
+			604800) ; Negative Cache TTL
+ IN	NS	ns1.internet.com.
+ns1	IN	A	120.100.20.2
+@	IN	A	120.100.20.2
+www	IN	A	120.100.20.2
+siteA	IN	A	120.100.20.2
+hostPC	IN	A	120.100.20.2

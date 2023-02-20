@@ -1,0 +1,34 @@
+Cliente
+
+	Client - LabcomServer2-1 - 198.162.157.2/26
+		ip addr
+		sudo ip link set enp0s3 up
+		sudo ip addr add 198.162.157.2/26 dev enp0s3
+		sudo ip route add default via 198.162.157.62 dev enp0s3
+		ip addr
+		sudo ip addr del 172.27.0.2/24 dev enp0s3
+		ip addr
+		ip route
+		sudo ip route del default via 172.27.0.254 dev enp0s3 proto dhcp metric 100 dev enp0s3
+		ip route
+		sudo nano /etc/resolv.conf
+			nameserver 198.162.157.130
+	Server - LabcomServer2-1 - 198.162.157.130/27
+
+Server
+
+	Server - LabcomServer2Clone - 198.162.157.130/27
+		ip addr
+			sudo ip link set enp0s3 up
+			sudo ip addr add 198.162.157.2/26 dev enp0s3
+			sudo ip route add default via 198.162.157.158 dev enp0s3
+			ip addr
+			sudo ip addr del 172.27.2.2/24 dev enp0s3
+			ip addr
+			ip route
+			sudo ip route del default via 172.27.2.254 dev enp0s3 proto dhcp metric 100 dev enp0s3
+			ip route
+			sudo nano /etc/resolv.conf
+				NameServer 198.162.157.130
+			DNS(Guião)
+			HTTP(Guião)

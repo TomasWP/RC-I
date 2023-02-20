@@ -1,0 +1,4 @@
+<VirtualHost *:80>
+	DocumentRoot /var/www/html/design.titantech.pt-80
+	ServerName design.titantech.pt
+	ServerAlias www.design.titantech.pt

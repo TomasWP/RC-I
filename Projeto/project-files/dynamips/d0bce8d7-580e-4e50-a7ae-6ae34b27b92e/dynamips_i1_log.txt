@@ -1,0 +1,42 @@
+Nov 26 14:07:32.428 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Nov 26 14:07:32.429 HYPERVISOR: Started on IP = localhost, TCP port = 1179.
+Nov 26 14:07:32.722 HYPERVISOR: exec_cmd: hypervisor version 
+Nov 26 14:07:32.722 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\tomas\OneDrive - Universidade de Aveiro\Tomas\U.A\2 Ano\1 Semestre\RC-I\Projeto\project-files\dynamips 
+Nov 26 14:07:32.725 GENERAL: working_dir=C:\Users\tomas\OneDrive - Universidade de Aveiro\Tomas\U.A\2 Ano\1 Semestre\RC-I\Projeto\project-files\dynamips
+Nov 26 14:07:32.725 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\tomas\OneDrive - Universidade de Aveiro\Tomas\U.A\2 Ano\1 Semestre\RC-I\Projeto\project-files\dynamips\d0bce8d7-580e-4e50-a7ae-6ae34b27b92e 
+Nov 26 14:07:32.726 GENERAL: working_dir=C:\Users\tomas\OneDrive - Universidade de Aveiro\Tomas\U.A\2 Ano\1 Semestre\RC-I\Projeto\project-files\dynamips\d0bce8d7-580e-4e50-a7ae-6ae34b27b92e
+Nov 26 14:07:32.726 HYPERVISOR: exec_cmd: vm create R1 1 c7200 
+Nov 26 14:07:32.727 VM: VM R1 created.
+Nov 26 14:07:32.728 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 7000 
+Nov 26 14:07:32.728 HYPERVISOR: exec_cmd: c7200 get_mac_addr R1 
+Nov 26 14:07:32.728 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 26 14:07:32.728 HYPERVISOR: exec_cmd: vm slot_add_binding R1 0 0 C7200-IO-FE 
+Nov 26 14:07:32.729 HYPERVISOR: exec_cmd: vm set_disk0 R1 0 
+Nov 26 14:07:32.729 HYPERVISOR: exec_cmd: vm set_exec_area R1 64 
+Nov 26 14:07:32.730 HYPERVISOR: exec_cmd: vm set_ios R1 C:/Users/tomas/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M2.image 
+Nov 26 14:07:32.731 HYPERVISOR: exec_cmd: c7200 set_mac_addr R1 ca01.104c.0000 
+Nov 26 14:07:32.731 HYPERVISOR: exec_cmd: vm set_nvram R1 512 
+Nov 26 14:07:32.732 HYPERVISOR: exec_cmd: vm set_ram R1 512 
+Nov 26 14:07:32.732 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 26 14:07:32.733 HYPERVISOR: exec_cmd: vm slot_remove_binding R1 0 0 
+Nov 26 14:07:32.733 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 26 14:07:32.733 HYPERVISOR: exec_cmd: vm slot_add_binding R1 0 0 C7200-IO-2FE 
+Nov 26 14:07:32.733 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 26 14:07:32.734 HYPERVISOR: exec_cmd: vm slot_add_binding R1 1 0 PA-2FE-TX 
+Nov 26 14:07:36.705 HYPERVISOR: exec_cmd: nio create_udp udp-7b46c475-8076-404e-9b72-200d4ed13f3d 10002 127.0.0.1 10003 
+Nov 26 14:07:36.971 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 1 udp-7b46c475-8076-404e-9b72-200d4ed13f3d 
+Nov 26 14:07:36.972 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 26 14:07:37.030 HYPERVISOR: exec_cmd: nio create_udp udp-1a960f2d-610c-4413-88c8-af72dbb6a6aa 10006 127.0.0.1 10007 
+Nov 26 14:07:37.033 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 1 0 udp-1a960f2d-610c-4413-88c8-af72dbb6a6aa 
+Nov 26 14:07:37.033 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 26 14:07:37.078 HYPERVISOR: exec_cmd: nio create_udp udp-610af9fd-34c7-489d-b481-cf4c3fd96816 10010 127.0.0.1 10011 
+Nov 26 14:07:37.081 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 1 1 udp-610af9fd-34c7-489d-b481-cf4c3fd96816 
+Nov 26 14:07:37.081 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 26 14:07:37.114 HYPERVISOR: exec_cmd: nio create_udp udp-befdcbbf-9213-4530-88a5-b566bd49b6c8 10014 127.0.0.1 10015 
+Nov 26 14:07:37.117 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 0 udp-befdcbbf-9213-4530-88a5-b566bd49b6c8 
+Nov 26 14:07:37.118 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 26 14:07:41.867 HYPERVISOR: exec_cmd: vm set_ghost_status R1 2 
+Nov 26 14:07:41.869 HYPERVISOR: exec_cmd: vm set_ghost_file R1 C:\Users\tomas\OneDrive - Universidade de Aveiro\Tomas\U.A\2 Ano\1 Semestre\RC-I\Projeto\project-files\dynamips\c7200-adventerprisek9-mz.151-4.M2.image-512.ghost 
+Nov 26 14:07:41.869 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 26 14:07:41.871 HYPERVISOR: exec_cmd: vm set_config R1 configs\i1_startup-config.cfg configs\i1_private-config.cfg 
+Nov 26 14:07:41.872 HYPERVISOR: exec_cmd: vm start R1 

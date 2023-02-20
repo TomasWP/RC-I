@@ -1,0 +1,51 @@
+Nov 26 14:07:33.338 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Nov 26 14:07:33.338 HYPERVISOR: Started on IP = localhost, TCP port = 1188.
+Nov 26 14:07:33.825 HYPERVISOR: exec_cmd: hypervisor version 
+Nov 26 14:07:33.825 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\tomas\OneDrive - Universidade de Aveiro\Tomas\U.A\2 Ano\1 Semestre\RC-I\Projeto\project-files\dynamips 
+Nov 26 14:07:33.825 GENERAL: working_dir=C:\Users\tomas\OneDrive - Universidade de Aveiro\Tomas\U.A\2 Ano\1 Semestre\RC-I\Projeto\project-files\dynamips
+Nov 26 14:07:33.825 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\tomas\OneDrive - Universidade de Aveiro\Tomas\U.A\2 Ano\1 Semestre\RC-I\Projeto\project-files\dynamips\5d262d23-7675-4047-b75b-9083c09f5004 
+Nov 26 14:07:33.826 GENERAL: working_dir=C:\Users\tomas\OneDrive - Universidade de Aveiro\Tomas\U.A\2 Ano\1 Semestre\RC-I\Projeto\project-files\dynamips\5d262d23-7675-4047-b75b-9083c09f5004
+Nov 26 14:07:33.826 HYPERVISOR: exec_cmd: vm create ISP 3 c7200 
+Nov 26 14:07:33.827 VM: VM ISP created.
+Nov 26 14:07:33.828 HYPERVISOR: exec_cmd: vm set_con_tcp_port ISP 7002 
+Nov 26 14:07:33.828 HYPERVISOR: exec_cmd: c7200 get_mac_addr ISP 
+Nov 26 14:07:33.828 HYPERVISOR: exec_cmd: vm get_status ISP 
+Nov 26 14:07:33.829 HYPERVISOR: exec_cmd: vm slot_add_binding ISP 0 0 C7200-IO-FE 
+Nov 26 14:07:33.829 HYPERVISOR: exec_cmd: vm set_disk0 ISP 0 
+Nov 26 14:07:33.830 HYPERVISOR: exec_cmd: vm set_exec_area ISP 64 
+Nov 26 14:07:33.830 HYPERVISOR: exec_cmd: vm set_ios ISP C:/Users/tomas/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M2.image 
+Nov 26 14:07:33.831 HYPERVISOR: exec_cmd: c7200 set_mac_addr ISP ca03.8a90.0000 
+Nov 26 14:07:33.832 HYPERVISOR: exec_cmd: vm set_nvram ISP 512 
+Nov 26 14:07:33.832 HYPERVISOR: exec_cmd: vm set_ram ISP 512 
+Nov 26 14:07:33.833 HYPERVISOR: exec_cmd: vm get_status ISP 
+Nov 26 14:07:33.833 HYPERVISOR: exec_cmd: vm slot_remove_binding ISP 0 0 
+Nov 26 14:07:33.833 HYPERVISOR: exec_cmd: vm get_status ISP 
+Nov 26 14:07:33.834 HYPERVISOR: exec_cmd: vm slot_add_binding ISP 0 0 C7200-IO-2FE 
+Nov 26 14:07:33.834 HYPERVISOR: exec_cmd: vm get_status ISP 
+Nov 26 14:07:33.834 HYPERVISOR: exec_cmd: vm slot_add_binding ISP 1 0 PA-2FE-TX 
+Nov 26 14:07:37.828 HYPERVISOR: exec_cmd: nio create_udp udp-a621e2f6-b2bb-4473-90ee-dff0c701cd94 10040 127.0.0.1 10041 
+Nov 26 14:07:38.064 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ISP 0 0 udp-a621e2f6-b2bb-4473-90ee-dff0c701cd94 
+Nov 26 14:07:38.065 HYPERVISOR: exec_cmd: vm get_status ISP 
+Nov 26 14:07:38.400 HYPERVISOR: exec_cmd: nio create_udp udp-276522da-0df9-4ead-a395-77c408d3ccee 10054 127.0.0.1 10055 
+Nov 26 14:07:38.403 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ISP 0 1 udp-276522da-0df9-4ead-a395-77c408d3ccee 
+Nov 26 14:07:38.404 HYPERVISOR: exec_cmd: vm get_status ISP 
+Nov 26 14:07:41.384 HYPERVISOR: exec_cmd: vm create Ghost 0 c7200 
+Nov 26 14:07:41.385 VM: VM Ghost created.
+Nov 26 14:07:41.386 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/tomas/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M2.image 
+Nov 26 14:07:41.387 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Nov 26 14:07:41.389 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost C:\Users\tomas\OneDrive - Universidade de Aveiro\Tomas\U.A\2 Ano\1 Semestre\RC-I\Projeto\project-files\dynamips\c7200-adventerprisek9-mz.151-4.M2.image-512.ghost 
+Nov 26 14:07:41.390 HYPERVISOR: exec_cmd: vm set_ram Ghost 512 
+Nov 26 14:07:41.390 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Nov 26 14:07:41.391 HYPERVISOR: exec_cmd: vm set_config Ghost configs\i0_startup-config.cfg 
+Nov 26 14:07:41.391 HYPERVISOR: exec_cmd: vm start Ghost 
+Nov 26 14:07:41.781 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Nov 26 14:07:41.783 HYPERVISOR: exec_cmd: vm stop Ghost 
+Nov 26 14:07:41.859 VM: VM Ghost shutdown.
+Nov 26 14:07:41.860 HYPERVISOR: exec_cmd: vm extract_config Ghost 
+Nov 26 14:07:41.862 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Nov 26 14:07:41.862 VM: VM Ghost destroyed.
+Nov 26 14:07:41.866 HYPERVISOR: exec_cmd: vm set_ghost_status ISP 2 
+Nov 26 14:07:41.866 HYPERVISOR: exec_cmd: vm set_ghost_file ISP C:\Users\tomas\OneDrive - Universidade de Aveiro\Tomas\U.A\2 Ano\1 Semestre\RC-I\Projeto\project-files\dynamips\c7200-adventerprisek9-mz.151-4.M2.image-512.ghost 
+Nov 26 14:07:41.867 HYPERVISOR: exec_cmd: vm get_status ISP 
+Nov 26 14:07:41.868 HYPERVISOR: exec_cmd: vm set_config ISP configs\i3_startup-config.cfg configs\i3_private-config.cfg 
+Nov 26 14:07:41.869 HYPERVISOR: exec_cmd: vm start ISP 

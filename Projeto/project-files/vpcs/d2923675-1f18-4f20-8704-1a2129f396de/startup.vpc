@@ -1,0 +1,3 @@
+set pcname PC2-Design
+dhcp
+ip auto
